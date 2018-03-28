@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/kevinthomaskane/portfolio/issues"
   },
-  "homepage": "https://github.com/kevinthomaskane/portfolio#readme"
+  "homepage": "https://github.com/kevinthomaskane/portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "path": "^0.12.7"
+  }
 }
