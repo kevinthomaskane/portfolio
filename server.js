@@ -3,6 +3,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
 
+var db = require("./models");
 var htmlRoutes = require("./app/routing/htmlRoutes.js")
 
 var app = express();
@@ -13,6 +14,8 @@ app.use(bodyParser.json());
 
 htmlRoutes(app, path, express)
 
-app.listen(PORT, function() {
-    console.log("App listening on PORT " + PORT);
+db.sequelize.sync({ force: true }).then(function() {
+    app.listen(PORT, function() {
+      console.log("App listening on PORT " + PORT);
+    });
   });
