@@ -9,10 +9,7 @@ function htmlRoutes(app, path, express){
 
     app.get("/", function(req, res) {
         counter++
-        db.View.create({
-            num: counter
-        }
-    ).then((data)=>{
+        db.View.create().then((data)=>{
         console.log(data)
     })
         res.sendFile(path.join(__dirname, "../public/index.html"));
