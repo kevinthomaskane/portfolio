@@ -13,29 +13,20 @@ var connection;
 // });
 // }
 
-var database = process.env.JAWSDB_URL || 'my_portfolio'
-        var sequelize = ""
 
-        if (process.env.JAWSDB_URL) {
-            sequelize = new Sequelize(database)
-        }
-        else {
-            sequelize = new Sequelize(database, 'postgres', '', {
-                dialect: 'postgres'
-            });
-        }
+var sequelize;
 
-// if (process.env.DATABASE_URL) {
-//     // the application is executed on Heroku ... use the postgres database
-//     sequelize = new Sequelize(process.env.DATABASE_URL, {
-//       dialect:  'postgres',
-//       protocol: 'postgres',
-//       logging:  true //false
-//     });
-//   } else {
-//     // the application is executed on the local machine
-//     sequelize = new Sequelize("postgres:///my_db");
-//   }
+if (process.env.JAWSDB_URL) {
+    // the application is executed on Heroku ... use the postgres database
+    sequelize = new Sequelize(process.env.JAWSDB_URL, {
+      dialect:  'mysql',
+      protocol: 'mysql',
+      logging:  true //false
+    });
+  } else {
+    // the application is executed on the local machine
+    sequelize = new Sequelize("mysql:///my_portfolio");
+  }
 
 connection.connect(function(err) {
   if (err) {
