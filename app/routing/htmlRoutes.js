@@ -9,9 +9,8 @@ function htmlRoutes(app, path, express){
 
     app.get("/", function(req, res) {
         counter++
-        db.View.update({
+        db.View.create({
             num: counter
-        },{where: {id: 1}
         }
     ).then((data)=>{
         console.log(data)
