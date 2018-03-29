@@ -19,21 +19,21 @@
 
 <body>
 
-<a class="waves-effect waves-light btn modal-trigger" href="#modal1">send a message!</a>
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">send a message!</a>
 
-<div id="modal1" class="modal">
-  <div class="modal-content">
-      <p >What is your name?</p>
-    <input id="name" type="text" placeholder="name">
-    <p >What is your email?</p>
-    <input id="email" type="text" placeholder="example@example.com">
-    <p >Your message</p>
-    <input id="message" type="text" placeholder="any comments?">
-  </div>
-  <div class="modal-footer">
-    <a href="#!" id="submit" class="modal-action modal-close waves-effect waves-green btn-flat">Send</a>
-  </div>
-</div>
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <p>What is your name?</p>
+            <input id="name" type="text" placeholder="name">
+            <p>What is your email?</p>
+            <input id="email" type="text" placeholder="example@example.com">
+            <p>Your message</p>
+            <input id="message" type="text" placeholder="any comments?">
+        </div>
+        <div class="modal-footer">
+            <a href="#!" id="submit" class="modal-action modal-close waves-effect waves-green btn-flat">Send</a>
+        </div>
+    </div>
 
     <div class="parallax-container">
         <div class="parallax">
@@ -374,19 +374,29 @@
             })
         })
 
-        $("#submit").on("click", ()=>{
+        var body = false;
+
+        $("#submit").on("click", () => {
 
             var messageObject = {
                 name: $("#name").val().trim(),
                 email: $("#email").val().trim(),
                 message: $("#message").val().trim()
             }
-            $.post("/new", messageObject).then((data)=>{
-                alert("thank you for your message!")
-                $("#name").val("");
-                $("#email").val("");
-                $("#message").val("");
-            })
+
+            if (messageObject.message.length > 0) {
+                body = true;
+            }
+
+            if (body) {
+                $.post("/new", messageObject).then((data) => {
+                    alert("thank you for your message!")
+                    $("#name").val("");
+                    $("#email").val("");
+                    $("#message").val("");
+                })
+            }
+
         })
 
 
