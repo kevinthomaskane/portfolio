@@ -1,14 +1,10 @@
-.brand-logo{
-    margin-left: 2%;
-    font-family: 'Cairo', sans-serif;
-    
-}
+
 
 #topSection{
     background-image: url("la.jpeg");
     position: relative;
     background-size: 1450px 1000px;
-    opacity: .4;
+    opacity: .3;
     height: 800px;
 }
 
@@ -20,14 +16,22 @@
     background-color: #e57373;
 }
 
+
 #topText{
     font-family: 'Cairo', sans-serif;
     font-weight: bold;
     z-index: 2;
-    font-size: 250%;
+    font-size: 300%;
     position: absolute;
     top: 250px;
+    line-height: 1.2;
 
+}
+
+#aboutText{
+    font-family: 'Cairo', sans-serif;
+    font-size: 300%;
+    
 }
 
 #messageBtn{
@@ -44,7 +48,7 @@
     text-align: right;
 }
 
-.btn:hover{
+/* .btn:hover{
     background-color: #e57373;
 }
 
@@ -54,12 +58,9 @@
 
 .btn:focus{
     background-color: #e57373;
-}
+} */
 
-.fa-info-circle:before {
-    content: "\f05a";
-    opacity: 0;
-}
+
 #card-image {
     width: 330px;
     height: 300px;
@@ -123,6 +124,9 @@ li {
     color: black;
 
 }
+ul{
+    padding-left: 0;
+}
 
 hr {
     /* margin-top: 5%; */
@@ -141,9 +145,9 @@ hr {
 
 #my-bio {
     font-family: 'Josefin Sans', sans-serif;
-   padding-top: 2px;
    padding-bottom: 2px;
-   font-size: 25px;
+   font-size: 125%;
+   width: 80%;
 }
 
 .carousel .carousel-item img{
