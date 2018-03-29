@@ -6,12 +6,24 @@
 
 .modal-trigger{
     position: fixed;
-    top: 50px;
-    left: 50px;
+    top: 40px;
+    left: 40px;
     width: 150px;
     font-size: 70%;
     padding: 3px;
     background-color: black;
+}
+
+.btn:hover{
+    background-color: #e57373;
+}
+
+.btn:active{
+    background-color: #e57373;
+}
+
+.btn:focus{
+    background-color: #e57373;
 }
 
 .fa-info-circle:before {
