@@ -19,7 +19,7 @@
 
 <body>
 
-    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">send a message!</a>
+    <a class="waves-effect waves-light btn modal-trigger" id="messageBtn" href="#modal1">send a message!</a>
 
     <div id="modal1" class="modal">
         <div class="modal-content">
@@ -35,18 +35,52 @@
         </div>
     </div>
 
-    <div class="parallax-container">
+    <!-- <div class="parallax-container">
         <div class="parallax">
 
             <img src="la.jpeg">
 
         </div>
 
-    </div>
+    </div> -->
+    <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper black">
+                    <a href="index.html" class="brand-logo">
+                        
+                    </a>
+                    <ul id="nav-mobile" class="right">
+                        <li>
+                            <a href="index.html">Resume</a>
+                        </li>
+                        <li>
+                            <a href="favorites.html">About</a>
+                        </li>
+                        <li>
+                            <a href="community.html">Projects</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="topSection"></div>
+                <div class="row">
+                        <div class="col m4">
+        
+                        </div>
+                        <div class="col m4">
+                                <p id="topText" >Kevin Kane: <br>
+                                    Full-Stack Developer<br>
+                                <button class="btn btn-top">About</button> <button class="btn btn-top">Work</button></p>
+                        </div>
+                        <div class="col m4">
+        
+                            </div>
+                    </div> 
+        
+        
 
     <div class="container">
-        <h3 id="header-text">Kevin Kane: Web Developer</h3>
-        <hr id="top">
         <div class="row">
             <div class="col m7">
                 <img id="about-pic" src="kevinprofilepic.jpg">
@@ -72,86 +106,72 @@
     </div>
     <div class="container">
         <h3 id="header-text">My Skills
-            <a href="#">
-                <i class="fas fa-info-circle modal-trigger" href="#modal1"></i>
-            </a>
+
         </h3>
-        <div id="modal1" class="modal bottom-sheet">
-            <div class="modal-content">
-                <div class="collection">
-                    <a>
-                        <img src="javascript.png">
-                    </a>
-                    <a>
-                        <img src="node.svg.png">
-                    </a>
-                    <a>
-                        <img src="react.png">
-                    </a>
-                    <a>
-                        <img src="express.png">
-                    </a>
-                    <a>
-                        <img src="sql.png">
-                    </a>
-                    <a>
-                        <img src="mongo.png">
-                    </a>
 
-                    <a>
-                        <img src="jquery.png">
-                    </a>
-                    <a>
-                        <img src="Materialize.png">
-                    </a>
-                    <a>
-                        <img src="bootstrap.png">
-                    </a>
-                    <a>
-                        <img src="css.svg">
-                    </a>
-                    </a>
-                    <img src="html.jpg">
-                    </a>
-                </div>
-            </div>
-        </div>
         <hr id="skills-line">
+        <div class="row">
+            <div class="col m3">
+                <ul><h5>Front-end and Deployment</h5>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>Bootstrap</li>
+                    <li>Materialize</li>
+                    <li>Git</li>
+                    <li>Heroku</li>
+                </ul>
+            </div>
 
-        <div class="carousel">
-            <a class="carousel-item" href="#three!">
-                <img src="javascript.png">
-            </a>
-            <a class="carousel-item" href="#three!">
-                <img src="react.png">
-            </a>
-            <a class="carousel-item" href="#one!">
-                <img src="node.png">
-            </a>
-            <a class="carousel-item" href="#one!">
-                <img src="express.png">
-            </a>
-            <a class="carousel-item" href="#one!">
-                <img src="sql.png">
-            </a>
-            <a class="carousel-item" href="#one!">
-                <img src="mongo.png">
-            </a>
-            <a class="carousel-item" href="#four!">
-                <img src="jquery.png">
-            </a>
-            <a class="carousel-item" href="#five!">
-                <img src="Materialize.png">
-            </a>
-            <a class="carousel-item" href="#five!">
-                <img src="bootstrap.png">
-            </a>
-            <a class="carousel-item" href="#two!">
-                <img src="css.svg">
-            </a>
-            <a class="carousel-item" href="#one!">
-                <img src="html.jpg">
-            </a>
+            <div class="carousel col m6">
+                <a class="carousel-item" href="#three!">
+                    <img src="javascript.png">
+                </a>
+                <a class="carousel-item" href="#three!">
+                    <img src="react.png">
+                </a>
+                <a class="carousel-item" href="#one!">
+                    <img src="node.png">
+                </a>
+                <a class="carousel-item" href="#one!">
+                    <img src="express.png">
+                </a>
+                <a class="carousel-item" href="#one!">
+                    <img src="sql.png">
+                </a>
+                <a class="carousel-item" href="#one!">
+                    <img src="mongo.png">
+                </a>
+                <a class="carousel-item" href="#four!">
+                    <img src="jquery.png">
+                </a>
+                <a class="carousel-item" href="#five!">
+                    <img src="Materialize.png">
+                </a>
+                <a class="carousel-item" href="#five!">
+                    <img src="bootstrap.png">
+                </a>
+                <a class="carousel-item" href="#two!">
+                    <img src="css.svg">
+                </a>
+                <a class="carousel-item" href="#one!">
+                    <img src="html.jpg">
+                </a>
+            </div>
+
+            <div class="col m3">
+                    <ul id="backEnd"><h5>Back-end and Database</h5>
+                            <li>NodeJS</li>
+                            <li>ExpressJS</li>
+                            <li>ReactJS</li>
+                            <li>HandlebarsJS</li>
+                            <li>Sequelize</li>
+                            <li>mySQL</li>
+                            <li>MongoDB</li>
+                            <li>REST API practices</li>
+                        </ul>
+            </div>
         </div>
     </div>
     <div class="parallax-container">
@@ -369,9 +389,6 @@
             $('.slider').slider();
             $('.parallax').parallax();
             $('.carousel').carousel();
-            $(".modal-action").click(function () {
-                $('#modal1').modal('open');
-            })
         })
 
         var body = false;

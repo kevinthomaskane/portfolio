@@ -4,14 +4,44 @@
     
 }
 
-.modal-trigger{
+#topSection{
+    background-image: url("la.jpeg");
+    position: relative;
+    background-size: 1450px 1000px;
+    opacity: .4;
+    height: 800px;
+}
+
+.right {
+    padding-right: 100px;
+}
+.btn-top {
+    padding-left: 25px;
+    background-color: #e57373;
+}
+
+#topText{
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+    z-index: 2;
+    font-size: 250%;
+    position: absolute;
+    top: 250px;
+
+}
+
+#messageBtn{
     position: fixed;
-    top: 40px;
-    left: 40px;
+    top: 760px;
+    left: 1250px;
     width: 150px;
     font-size: 70%;
     padding: 3px;
     background-color: black;
+}
+
+#backEnd{
+    text-align: right;
 }
 
 .btn:hover{
@@ -85,6 +115,8 @@ h4{
 
 li {
     padding-bottom: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 110%;
 }
 
 .black-link{
