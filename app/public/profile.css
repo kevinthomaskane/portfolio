@@ -4,6 +4,20 @@
     
 }
 
+.modal-trigger{
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    width: 150px;
+    font-size: 70%;
+    padding: 3px;
+    background-color: black;
+}
+
+.fa-info-circle:before {
+    content: "\f05a";
+    opacity: 0;
+}
 #card-image {
     width: 330px;
     height: 300px;
