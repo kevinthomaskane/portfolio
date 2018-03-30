@@ -25,7 +25,17 @@
     position: absolute;
     top: 250px;
     line-height: 1.2;
+}
 
+.skills-text{
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+    z-index: 2;
+    font-size: 100%;
+    position: absolute;
+    text-align: center;
+    top: 1400px;
+    line-height: 1.2;
 }
 
 #aboutText{
@@ -175,4 +185,12 @@ hr {
 footer{
     padding-bottom: 20px;
     background-color: black;
+}
+
+.skills-section{
+    background-image: url("dc.jpg");
+    position: relative;
+    background-size: 1450px 1000px;
+    opacity: .3;
+    height: 800px;
 }
