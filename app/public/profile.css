@@ -1,16 +1,17 @@
 
 
 #topSection{
-    background-image: url("la.jpeg");
-    position: relative;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('la.jpeg');
     background-size: 1450px 1000px;
-    opacity: .3;
     height: 800px;
 }
 
-.right {
-    padding-right: 100px;
+.right li {
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
 }
+
+
 .btn-top {
     padding-left: 25px;
     background-color: #e57373;
@@ -20,10 +21,9 @@
 #topText{
     font-family: 'Cairo', sans-serif;
     font-weight: bold;
-    z-index: 2;
+    color: white;
     font-size: 300%;
-    position: absolute;
-    top: 250px;
+  margin-top: 250px;
     line-height: 1.2;
 }
 
@@ -49,14 +49,15 @@
     width: 150px;
     font-size: 70%;
     padding: 3px;
-    background-color: black;
+    color: black;
+    background-color: white;
 }
 
 #backEnd{
     text-align: right;
 }
 
-/* .btn:hover{
+.btn:hover{
     background-color: #e57373;
 }
 
@@ -66,18 +67,26 @@
 
 .btn:focus{
     background-color: #e57373;
-} */
-
-
-#card-image {
-    width: 460px;
-    height: 400px;
-    position: relative;
-    top: -40px;
-    
 }
 
 
+#card-image {
+    width: 340px;
+    height: 220px;
+    position: relative;
+    top: -40px;
+    padding-top: 20px;
+    
+}
+.card{
+    margin: 50px 0 0 10%;
+    width: 75%;
+    overflow: auto;
+}
+
+.card-content{
+    overflow: auto;
+}
 
 
 .collection img{
@@ -135,7 +144,7 @@ li {
 }
 
 .black-link{
-    color: black;
+    color: white;
 
 }
 ul{
@@ -162,7 +171,7 @@ hr {
 #my-bio {
     font-family: 'Josefin Sans', sans-serif;
    padding-bottom: 2px;
-   font-size: 125%;
+   font-size: 135%;
    width: 80%;
 }
 
@@ -179,6 +188,10 @@ hr {
     width: 100%;
 }
 
+.row{
+    margin-bottom: 0;
+}
+
 
 footer{
     padding-bottom: 20px;
@@ -186,10 +199,9 @@ footer{
 }
 
 .skills-section{
-    background-image: url("dc.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('dc.jpg');
     position: relative;
     color: white;
-    opacity: 2;
     background-size: 1450px 1000px; 
     height: 800px;
 }
@@ -197,8 +209,21 @@ footer{
 #skillsHeader{
     font-family: 'Cairo', sans-serif;
     font-weight: bold;
-    font-size: 200%;
+    font-size: 300%;
     font-style: italic;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 200px;
+}
+
+#projectsHeader{
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+    font-size: 300%;
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
+li img{
+    height: 40px;
+    width: 40px;
 }
