@@ -32,9 +32,7 @@
     font-weight: bold;
     z-index: 2;
     font-size: 100%;
-    position: absolute;
     text-align: center;
-    top: 1400px;
     line-height: 1.2;
 }
 
@@ -190,7 +188,17 @@ footer{
 .skills-section{
     background-image: url("dc.jpg");
     position: relative;
-    background-size: 1450px 1000px;
-    opacity: .3;
+    color: white;
+    opacity: 2;
+    background-size: 1450px 1000px; 
     height: 800px;
+}
+
+#skillsHeader{
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+    font-size: 200%;
+    font-style: italic;
+    text-align: center;
+    margin-top: 150px;
 }
