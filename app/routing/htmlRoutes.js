@@ -1,14 +1,11 @@
 
 var db = require("../../models")
 
-var counter = 0;
-
 function htmlRoutes(app, path, express){
 
     app.use('/', express.static('images'));
 
     app.get("/", function(req, res) {
-        counter++
         db.View.create().then((data)=>{
         console.log(data)
     })
