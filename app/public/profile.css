@@ -42,6 +42,10 @@
     
 }
 
+#message{
+    height: 100px;
+}
+
 #messageBtn{
     position: fixed;
     top: 760px;
