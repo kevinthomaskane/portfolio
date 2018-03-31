@@ -6,24 +6,17 @@
     height: 800px;
 }
 
-.right li {
-    font-family: 'Cairo', sans-serif;
-    font-weight: bold;
-}
-
-
 .btn-top {
     padding-left: 25px;
     background-color: #e57373;
 }
-
 
 #topText{
     font-family: 'Cairo', sans-serif;
     font-weight: bold;
     color: white;
     font-size: 300%;
-  margin-top: 250px;
+    margin-top: 250px;
     line-height: 1.2;
 }
 
@@ -38,10 +31,15 @@
 
 #aboutText{
     font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+    font-style: italic;
     font-size: 300%;
     
 }
 
+a{
+    color: #e57373;
+}
 
 
 #message{
@@ -114,64 +112,50 @@
 }
 
 
-.card-image {
-    width: 340px;
-    height: 250px;
-    position: relative;
-    top: -40px;
-    padding-top: 20px;
-    
-}
+.project{
+    border: solid 1px rgb(223, 220, 220);
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    border-radius: 15px;
 
-.card{
-    margin: 50px 0 0 10%;
-    width: 75%;
-    height: 300px;
-    font-family: 'Josefin Sans', sans-serif;
-    
 }
-
-.card.small{
-    height: 350px;
-    font-family: 'Josefin Sans', sans-serif;
-}
-.card-content{
-    padding-top: 5px;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-.card .card-content{
-    padding-top: 0;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-.card.small .card-content, .card.medium .card-content, .card.large .card-content {
-    max-height: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
 .image-card{
     height: 300px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 15px 15px 0 0;
+    -webkit-filter: brightness(100%);
+}
+
+.image-card:hover{
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
 }
 
 .card-title{
-    font-family: 'Cairo', sans-serif;
+    font-weight: bold; 
     color: black;
+    font-size: 20px;
+    margin-top: 25px;
+    padding: 35px 0 15px 50px;
 }
 
-
-.collection img{
-    height: 150px;
-    width: 210px;
-    padding: 10px;
-}
-.collection{
-    background-color: white;
-    border: none;
+.card-title:hover{
+    color: #e57373;
 }
 
+.project p{
+    padding: 0 50px 50px 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: rgb(131, 130, 130);
+}
 
 .modal-content{
     background-color: white;
@@ -209,12 +193,12 @@ h4{
 
 li {
     padding-bottom: 10px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 110%;
 }
 
 .black-link{
-    color: white;
+    color: black;
 
 }
 ul{
@@ -239,24 +223,15 @@ hr {
 
 
 #my-bio {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
    padding-bottom: 2px;
-   font-size: 135%;
-   width: 80%;
+   color: rgb(131, 130, 130);
+   font-size: 95%;
+   line-height: 1.6;
+   margin-top: 0;
+   width: 50%;
 }
 
-.carousel .carousel-item img{
-    /* display: none; */
-    width: 200px;
-    height: 200px;
-    /* position: absolute;
-    top: 0;
-    left: 0; */
-}
-
-.carousel{
-    width: 100%;
-}
 
 .row{
     margin-bottom: 0;
@@ -292,22 +267,8 @@ footer{
     font-size: 300%;
     font-style: italic;
     text-align: center;
-    color: white;
-}
-li img{
-    height: 40px;
-    width: 40px;
+    color: black;
 }
 
-/* body::-webkit-scrollbar {
-    width: 1em;
-}
- 
-body::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-}
- 
-body::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 1px solid slategrey;
-} */
+
+
