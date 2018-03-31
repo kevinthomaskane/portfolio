@@ -157,6 +157,19 @@ a{
     color: rgb(131, 130, 130);
 }
 
+.modal{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: rgb(131, 130, 130);
+    border-radius: 10px;
+}
+
+.modal textarea {
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+}
+
 .modal-content{
     background-color: white;
     border: none;
@@ -195,6 +208,12 @@ li {
     padding-bottom: 10px;
     font-family: 'Open Sans', sans-serif;
     font-size: 110%;
+}
+
+ul h5{
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 .black-link{
@@ -258,7 +277,7 @@ footer{
     font-size: 300%;
     font-style: italic;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 180px;
 }
 
 #projectsHeader{
@@ -269,6 +288,7 @@ footer{
     text-align: center;
     color: black;
 }
+
 
 
 
