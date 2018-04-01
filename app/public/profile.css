@@ -114,6 +114,7 @@ a{
 
 .project{
     border: solid 1px rgb(223, 220, 220);
+    box-shadow: 0 4px 8px 0 rgba(156, 155, 155, 0.2), 0 6px 20px 0 rgba(146, 145, 145, 0.05);
     width: 90%;
     height: 500px;
     margin: 0 auto;
