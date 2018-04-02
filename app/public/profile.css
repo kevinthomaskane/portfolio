@@ -6,9 +6,24 @@
     height: 800px;
 }
 
-.btn-top {
-    padding-left: 25px;
+.topAnchors {
+    margin-top: 0;
+    margin-right: 10px;
+    width: 25%;
+    line-height: 40px;
+    height: 40px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
     background-color: #e57373;
+}
+
+nav ul a:hover{
+    color: #e57373;
+}
+
+.topAnchors:hover{
+    background-color: #e45c5c
 }
 
 #topText{
@@ -17,6 +32,7 @@
     color: white;
     font-size: 300%;
     margin-top: 250px;
+    margin-bottom: 10px;
     line-height: 1.2;
 }
 
@@ -48,8 +64,8 @@ a{
 
 #messageBtn{
     position: fixed;
-    top: 760px;
-    left: 1250px;
+    top: 750px;
+    left: 88%;
     width: 150px;
     font-size: 70%;
     padding: 3px;
@@ -90,7 +106,7 @@ a{
       
       @keyframes glowing {
         0% { background-color: #e57373; box-shadow: 0 0 3px #e57373; }
-        50% { background-color: rgb(189, 65, 65); box-shadow: 0 0 40px rgb(189, 65, 65); }
+        50% { background-color: rgb(204, 43, 43); box-shadow: 0 0 40px rgb(189, 65, 65); }
         100% { background-color: #e57373; box-shadow: 0 0 3px #e57373; }
       }
 
@@ -263,8 +279,19 @@ hr {
 footer{
     padding-bottom: 20px;
     background-color: black;
+    color: white;
     font-family: 'Cairo', sans-serif;
 }
+
+footer a{
+    color:white;
+}
+
+footer a:hover{
+    color: #e57373;
+}
+
+
 
 .skills-section{
     position: relative;
@@ -288,6 +315,7 @@ footer{
     font-style: italic;
     text-align: center;
     margin-top: 180px;
+    padding-left: 80px;
 }
 
 #projectsHeader{

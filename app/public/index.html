@@ -66,12 +66,12 @@
                     <br>
                     <i>Full-Stack Developer</i>
                     <br>
-                    <button class="btn btn-top">
+                    <div class="topAnchors">
                         <a style="color: white" href="#about">About</a>
-                    </button>
-                    <button href="#projects" class="btn btn-top">
+                    </div>
+                    <div class="topAnchors">
                         <a style="color: white" href="#projects">Projects</a>
-                    </button>
+                    </div>
                 </p>
             </div>
             <div class="col m4">
@@ -97,7 +97,7 @@
                 a front-end bootcamp offered by Beach Coders Academy and a full-stack bootcamp through UCLA. I'm happy to
                 say that I've found my passion as a developer and my first true love, JavaScript. If you like my work and
                 want to see more, be sure to check out my
-                <a  target="_blank" href="https://github.com/kevinthomaskane">GitHub
+                <a target="_blank" href="https://github.com/kevinthomaskane">GitHub
                     <i class="fab fa-github"></i>.</a>
             </p>
         </div>
@@ -107,16 +107,13 @@
 
     <div class="skills-section">
         <div class="row">
-                <div class="fullscreen-bg">
-                        <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
-                    
-                            <source src="vid.mp4" type="video/mp4">
-                            
-                        </video>
-                    </div>
-                    <div class="col m4">
-
-                    </div>
+            <div class="fullscreen-bg">
+                <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+                    <source src="vid.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col m4">
+            </div>
             <div class="col m8" id="skillsHeader">
                 My Skills
             </div>
@@ -154,9 +151,6 @@
         <div class="col m3"></div>
     </div>
 
-
-
-
     <a name="projects"></a>
 
     <div class="row" style="background-color:white; border-top: solid 1px white; padding: 100px 0 10px 0; ">
@@ -169,8 +163,7 @@
         <div class="col m3"></div>
         <div class="col m6">
             A mix of personal projects and work that I created during my courses. View more on
-            <a  target="_blank"
-                href="https://github.com/kevinthomaskane">GitHub
+            <a target="_blank" href="https://github.com/kevinthomaskane">GitHub
                 <i class="fab fa-github"></i>.</a>
         </div>
         <div class="col m3"></div>
@@ -188,14 +181,14 @@
                     <a class="card-title" href="https://kevinthomaskane.github.io/Project-1/" target="_blank">
                         CHARToppers
                     </a>
-                    <p >Complex project that incorporated 3 different API's, localStorage, and Firebase. Technologies used: JavaScript,
+                    <p>Complex project that incorporated 3 different API's, localStorage, and Firebase. Technologies used: JavaScript,
                         JQuery, Ajax, Firebase, Materialize, . View the code
                         <a target="_blank" href="https://github.com/kevinthomaskane/Project-1/tree/master/Assets">here</a>.</p>
                 </div>
             </div>
         </div>
         <div class="col m4">
-            <div class="project" >
+            <div class="project">
                 <div>
                     <img class="image-card" src="friend.gif">
                 </div>
@@ -203,9 +196,10 @@
                     <a class="card-title" href="https://friend-finder-ktk.herokuapp.com/" target="_blank">
                         Friend Finder
                     </a>
-                    <p >This is a full-stack application that I created using node.js, express.js, mySQL, and javascript. View
+                    <p>This is a full-stack application that I created using node.js, express.js, mySQL, and javascript. View
                         the code
-                        <a target="_blank" href="https://github.com/kevinthomaskane/friend-finder">here</a>.</p>
+                        <a target="_blank" href="https://github.com/kevinthomaskane/friend-finder">here</a>.
+                    </p>
                 </div>
             </div>
         </div>
@@ -216,10 +210,10 @@
                     <img class="image-card itunes" src="itunes.gif">
                 </div>
                 <div>
-                    <a  class="card-title" href="https://kevinthomaskane.github.io/itunesAPI/" target="_blank">
+                    <a class="card-title" href="https://kevinthomaskane.github.io/itunesAPI/" target="_blank">
                         iTunes API Project
                     </a>
-                    <p >Using the iTunes API, I created a site that allows the user to search iTunes for top hits. Technologies
+                    <p>Using the iTunes API, I created a site that allows the user to search iTunes for top hits. Technologies
                         used: JavaScript, JQuery, Ajax, Materialize. View the code
                         <a target="_blank" href="https://github.com/kevinthomaskane/itunesAPI/blob/master/index.html">here</a>.</p>
                 </div>
@@ -233,10 +227,10 @@
                         <img class="image-card" src="nyt.gif">
                     </div>
                     <div>
-                        <a  class="card-title" href="https://kevinthomaskane.github.io/nytimes/" target="_blank">
+                        <a class="card-title" href="https://kevinthomaskane.github.io/nytimes/" target="_blank">
                             New York Times API
                         </a>
-                        <p >This site that allows the user to search the New York Times API for recent articles. Technologies
+                        <p>This site that allows the user to search the New York Times API for recent articles. Technologies
                             used: JavaScript, JQuery, Ajax, Materialize. View the code
                             <a target="_blank" href="https://github.com/kevinthomaskane/nytimes/blob/master/index.html">here</a>.</p>
                     </div>
@@ -252,7 +246,7 @@
                         <a class="card-title" href="https://kevinthomaskane.github.io/TriviaGame/" target="_blank">
                             NBA Trivia Game
                         </a>
-                        <p >Test your NBA knowledge with a series of challenging questions! Each round you will be presented
+                        <p>Test your NBA knowledge with a series of challenging questions! Each round you will be presented
                             with 3 different questions. Technologies used: JavaScript, JQuery, Bootstrap. View the code
                             <a target="_blank" href="https://github.com/kevinthomaskane/TriviaGame/blob/master/assets/javascript/app.js">here</a>.</p>
                     </div>
@@ -267,7 +261,7 @@
                         <a class="card-title" href="" target="_blank">
                             This Project isn't yet built
                         </a>
-                        <p >This project is under construction, please check back later!
+                        <p>This project is under construction, please check back later!
                         </p>
                     </div>
                 </div>
@@ -279,12 +273,12 @@
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
-                    <h5 class="white-text">Want to get in touch?</h5>
-                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                    <a class="white-text" target="_blank" href="https://www.linkedin.com/in/kevinthomaskane/">LinkedIn</a>
+                    <h5>Want to get in touch?</h5>
+                    <a target="_blank" href="https://www.linkedin.com/in/kevinthomaskane/">
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
                     <br>
-                    <i class="fab fa-github"></i>
-                    <a class="white-text" target="_blank" href="https://github.com/kevinthomaskane">GitHub</a>
+                    <a target="_blank" href="https://github.com/kevinthomaskane">
+                        <i class="fab fa-github"></i> GitHub</a>
                     <br>
                     <i class="fa fa-envelope" aria-hidden="true"></i> kevinthomaskane@gmail.com
                 </div>
@@ -299,7 +293,7 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous">
-        </script>
+    </script>
     <script>
         $(document).ready(function () {
             $(".button-collapse").sideNav();
@@ -334,10 +328,6 @@
             }
 
         })
-
-
-
-
     </script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
