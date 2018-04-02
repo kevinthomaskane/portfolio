@@ -291,7 +291,9 @@ footer a:hover{
     color: #e57373;
 }
 
-
+.skills-text li:hover{
+    color: #e57373;
+}
 
 .skills-section{
     position: relative;
