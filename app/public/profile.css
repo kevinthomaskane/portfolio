@@ -330,6 +330,10 @@ footer a:hover{
     color: black;
 }
 
+#aboutHeader{
+    margin-top: 100px;
+}
+
   
   @media only screen and (max-width: 640px) {
       *{
@@ -359,10 +363,160 @@ footer a:hover{
     }
   
     #my-bio{
-        margin-left: 25%;
+        margin-right: 10%;
+        margin-left: 7%;
+
+        width: 90%;
+        text-align: left;
     }
+
+    #about-pic{
+        width: 80%;
+        margin: 40px 0 0px 0px;
+    }
+    #skillsHeader{
+        font-family: 'Cairo', sans-serif;
+        font-weight: bold;
+        font-size: 300%;
+        font-style: italic;
+        text-align: center;
+        margin-top: 120px;
+        margin-right: 50px;
+        margin-bottom: 70px;
+        padding-left: 150px;
+    }
+
+    .skills-text{
+        font-family: 'Cairo', sans-serif;
+        font-weight: bold;
+        z-index: 2;
+        font-size: 100%;
+        text-align: center;
+        line-height: 1.2;
+        background-color: rgb(240, 239, 239);
+    }
+
+    .project p{
+        padding: 0 50px 50px 50px;
+        text-align: left;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+        color: rgb(131, 130, 130);
+    }
+
+    .fullscreen_bg{
+        margin-top: -100px;
+    }
+
+    .skills-section{
+        position: relative;
+        color: black;
+        height: 800px;
+        margin-top: -250px;
+
+    }
+
+    #aboutHeader{
+        margin-top: 0px;
+    }
+
+    #projectsHeader{
+        font-family: 'Cairo', sans-serif;
+        font-weight: bold;
+        font-size: 300%;
+        font-style: italic;
+        text-align: center;
+        color: black;
+        margin-top: 0px;
+    }
+
+    .card-title{
+        padding-left: 0;
+        text-align: left;
+    }
+
+    #messageBtn{
+        position: fixed;
+        top: 550px;
+        left: 70%;
+        width: 100px;
+        font-size: 60%;
+        padding: 3px;
+        color: black;
+        background-color: white;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            border: none;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-block;
     
-    
+           
+            text-align: center;
+            text-decoration: none;
+            -webkit-animation: glowing 1500ms infinite;
+            -moz-animation: glowing 1500ms infinite;
+            -o-animation: glowing 1500ms infinite;
+            animation: glowing 1500ms infinite;
+          }
+          @-webkit-keyframes glowing {
+            0% { background-color: #e57373; -webkit-box-shadow: 0 0 3px #e57373; }
+            50% { background-color: rgb(189, 65, 65); -webkit-box-shadow: 0 0 40px rgb(189, 65, 65); }
+            100% { background-color: #e57373; -webkit-box-shadow: 0 0 3px #e57373; }
+          }
+          
+          @-moz-keyframes glowing {
+            0% { background-color: #e57373; -moz-box-shadow: 0 0 3px #e57373; }
+            50% { background-color: rgb(189, 65, 65); -moz-box-shadow: 0 0 40px rgb(189, 65, 65); }
+            100% { background-color: #e57373; -moz-box-shadow: 0 0 3px #e57373; }
+          }
+          
+          @-o-keyframes glowing {
+            0% { background-color: #e57373; box-shadow: 0 0 3px #e57373; }
+            50% { background-color: rgb(189, 65, 65); box-shadow: 0 0 40px rgb(189, 65, 65); }
+            100% { background-color: #e57373; box-shadow: 0 0 3px #e57373; }
+          }
+          
+          @keyframes glowing {
+            0% { background-color: #e57373; box-shadow: 0 0 3px #e57373; }
+            50% { background-color: rgb(204, 43, 43); box-shadow: 0 0 40px rgb(189, 65, 65); }
+            100% { background-color: #e57373; box-shadow: 0 0 3px #e57373; }
+          }
+
+          .modal{
+            font-family: 'Open Sans', sans-serif;
+            width: 90%;
+            font-size: 14px;
+            color: rgb(131, 130, 130);
+            border-radius: 10px;
+        }
+
+        #topSection{
+            background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('la.jpeg');
+            background-size: 1450px 1000px;
+            height: 600px;
+        }
+
+        #topText{
+            font-family: 'Cairo', sans-serif;
+            font-weight: bold;
+            color: white;
+            font-size: 300%;
+            margin-top: 170px;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        ul {
+            text-align: center;
+            font-size: 10px;
+            margin-left: 20px;
+            display: inline-block;
+        }
+
+        ul h5{
+            font-size: 12px;
+        }
   }
 
 
