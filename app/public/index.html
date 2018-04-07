@@ -39,9 +39,9 @@
         </div>
     </div>
 
-    <div class="navbar-fixed">
+    <div class="navbar-fixed" >
         <nav>
-            <div class="nav-wrapper black">
+            <div class="nav-wrapper black" style="padding-right: 50px">
                 <a href="index.html" class="brand-logo">
 
                 </a>
@@ -306,7 +306,6 @@
             $('.parallax').parallax();
             $('.carousel').carousel();
         })
-
         particlesJS("particles-js", {
             "particles": {
                 "number": {
@@ -435,21 +434,16 @@
             requestAnimationFrame(update);
         };
         requestAnimationFrame(update);;
-
         var body = false;
-
         $("#submit").on("click", () => {
-
             var messageObject = {
                 name: $("#name").val().trim(),
                 email: $("#email").val().trim(),
                 message: $("#message").val().trim()
             }
-
             if (messageObject.message.length > 0) {
                 body = true;
             }
-
             if (body) {
                 $.post("/new", messageObject).then((data) => {
                     alert("Thank you for your message! I will reply shortly")
@@ -458,7 +452,6 @@
                     $("#message").val("");
                 })
             }
-
         })
     </script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
