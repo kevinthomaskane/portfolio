@@ -13,7 +13,7 @@
     border-radius: 5px;
     display: inline-block;
     text-align: center;
-    background-color: #eb4444;
+    background-color: #f75252;
     /* position: absolute; */
 }
 
@@ -384,7 +384,7 @@ footer a:hover {
         font-weight: bold;
         z-index: 2;
         font-size: 75%;
-        text-align: right;
+        text-align: center;
         line-height: 1.2;
     }
     #skillsHeader {
@@ -414,21 +414,30 @@ footer a:hover {
         font-weight: bold;
         font-size: 300%;
         font-style: italic;
-        text-align: center;
-        margin-top: 120px;
-        margin-right: 50px;
-        margin-bottom: 70px;
-        padding-left: 150px;
+        text-align: center  !important;
+        padding-right: 50px;
+        padding-top: 30px;
+        margin-top: 100px;
+        background-color: rgb(240, 239, 239);
+    }
+
+    video{
+        display: none;
     }
     .skills-text {
         font-family: 'Cairo', sans-serif;
         font-weight: bold;
         z-index: 2;
         font-size: 100%;
-        padding-left: 50px;
+        padding-left: 40px;
         text-align: center;
         line-height: 1.2;
         background-color: rgb(240, 239, 239);
+    }
+
+    #secondList{
+        padding-left: 15px;
+        margin-bottom: 30px;
     }
     .project p {
         padding: 0 50px 50px 50px;
