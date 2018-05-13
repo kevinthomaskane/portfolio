@@ -155,12 +155,12 @@
 
     </div>
     <div id="projectArea" class="row">
-        <div class="col m4 s12">
+        <div class="col m6 s12">
             <div class="project">
                 <div>
                     <img class="image-card itunes" src="squad.gif">
                 </div>
-                <div>
+                <div class="card-text">
                     <a class="card-title" href="https://squad-up123.herokuapp.com/" target="_blank">
                         Squad-Up
                     </a>
@@ -171,12 +171,12 @@
             </div>
         </div>
 
-        <div class="col m4 s12">
+        <div class="col m6 s12">
             <div class="project">
                 <div>
                     <img class="image-card" src="todos.gif">
                 </div>
-                <div>
+                <div class="card-text">
                     <a class="card-title" href="https://collab-proj.herokuapp.com/" target="_blank">
                         Collab
                     </a>
@@ -187,29 +187,29 @@
                 </div>
             </div>
         </div>
-        <div class="col m4 s12">
-            <div class="project">
-                <div>
-                    <img class="image-card" src="toppers.gif">
-                </div>
-                <div>
-                    <a class="card-title" href="https://kevinthomaskane.github.io/CHARToppers/" target="_blank">
-                        CHARToppers
-                    </a>
-                    <p>Complex project that incorporated 3 different API's, localStorage, and Firebase. Technologies used: JavaScript,
-                        JQuery, Ajax, Firebase, Materialize, . View the code
-                        <a target="_blank" href="https://github.com/kevinthomaskane/Project-1/tree/master/Assets">here</a>.</p>
+        <div class="row">
+            <div class="col m6 s12">
+                <div class="project">
+                    <div>
+                        <img class="image-card" src="toppers.gif">
+                    </div>
+                    <div class="card-text">
+                        <a class="card-title" href="https://kevinthomaskane.github.io/CHARToppers/" target="_blank">
+                            CHARToppers
+                        </a>
+                        <p>Complex project that incorporated 3 different API's, localStorage, and Firebase. Technologies used:
+                            JavaScript, JQuery, Ajax, Firebase, Materialize, . View the code
+                            <a target="_blank" href="https://github.com/kevinthomaskane/Project-1/tree/master/Assets">here</a>.</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="row">
-            <div class="col m4 s12">
+            <div class="col m6 s12">
                 <div class="project">
                     <div>
                         <img class="image-card" src="times.gif">
                     </div>
-                    <div>
+                    <div class="card-text">
                         <a class="card-title" href="https://nytreactv1.herokuapp.com/" target="_blank">
                             New York Times React
                         </a>
@@ -219,13 +219,14 @@
                     </div>
                 </div>
             </div>
-
-            <div class="col m4 s12">
+        </div>
+        <div class="row">
+            <div class="col m6 s12">
                 <div class="project">
                     <div>
                         <img class="image-card" src="giphygif.gif">
                     </div>
-                    <div>
+                    <div class="card-text">
                         <a class="card-title" href="https://kevinthomaskane.github.io/giphy/" target="_blank">
                             Giphy API
                         </a>
@@ -236,23 +237,22 @@
                 </div>
             </div>
 
-            <div class="col m4 s12">
-                <div class="project">
-                    <div>
-                        <img class="image-card" src="mongo.gif">
+            <div class="col m6 s12">
+                    <div class="project">
+                        <div>
+                            <img class="image-card" src="mongo.gif">
+                        </div>
+                        <div class="card-text">
+                            <a class="card-title" href="https://protected-beach-89173.herokuapp.com/" target="_blank">
+                                SB Nation Scraper
+                            </a>
+                            <p>This is a full-stack application that I created using MongoDB, NodeJS, ExpressJS, Cheerio, and
+                                JavaScript. Read articles from SB Nation and save notes about each article. View the code
+                                <a target="_blank" href="https://github.com/kevinthomaskane/mongo">here</a>.
+                            </p>
+                        </div>
                     </div>
-                    <div>
-                        <a class="card-title" href="https://protected-beach-89173.herokuapp.com/" target="_blank">
-                            SB Nation Scraper
-                        </a>
-                        <p>This is a full-stack application that I created using MongoDB, NodeJS, ExpressJS, Cheerio, and JavaScript.
-                            Read articles from SB Nation and save notes about each article. View the code
-                            <a target="_blank" href="https://github.com/kevinthomaskane/mongo">here</a>.
-                        </p>
-                    </div>
-                </div>
             </div>
-
         </div>
     </div>
 
@@ -284,7 +284,15 @@
     <script>
         $(document).ready(function () {
             $('.modal').modal();
+            $(".project").on("mouseover", function () {
+                $(this).children($(".card-text")).addClass("card-text-hover")
+            });
+            $(".project").on("mouseleave", function () {
+                $(this).children($(".card-text")).removeClass("card-text-hover")
+            })
         })
+
+        console.log($(".project").children(".card-text"))
 
         particlesJS("particles-js", {
             "particles": {
@@ -439,7 +447,6 @@
                 console.log(data)
             });
         });
-
     </script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>

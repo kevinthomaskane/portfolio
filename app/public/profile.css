@@ -162,35 +162,51 @@ a {
     border: solid 1px rgb(223, 220, 220);
     box-shadow: 0 4px 8px 0 rgba(156, 155, 155, 0.2), 0 6px 20px 0 rgba(146, 145, 145, 0.05);
     width: 90%;
-    height: 500px;
+    height: 60vh;
     margin: 0 auto;
-    margin-bottom: 60px;
-    border-radius: 15px;
+    margin-bottom: 10vh;
+    border-radius: 15px;    
+    position: relative;
+    transition: all .4s ease-in-out;
+    transition-delay: .2s;
 }
 
+
 .image-card {
-    height: 300px;
+    height: 60vh;
+    object-fit: cover;
     width: 100%;
-    margin-bottom: 20px;
     border-radius: 15px 15px 0 0;
     -webkit-filter: brightness(100%);
 }
 
-.image-card:hover {
-    -webkit-filter: brightness(70%);
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    transition: all .5s ease;
+.card-text {
+    position: absolute;
+    background-color: black;
+    color: white;
+    opacity: .9;
+    overflow: hidden;
+    top: 50vh;
+    bottom: 0; 
+    padding-top:2vh;
+}
+
+.card-text-hover {
+    position: absolute;
+    border-radius: 15px 15px 0 0;
+    background-color: black;
+    color: white;
+    opacity: .7;
+    top: 0vh;
+    bottom: 0;
+    transition: .4s ease-in-out;
 }
 
 .card-title {
     font-weight: bold;
-    color: black;
-    font-size: 20px;
-    margin-top: 25px;
-    padding: 35px 0 15px 50px;
+    color: rgb(248, 247, 247);
+    font-size: 30px;
+    padding: 35px 0 50px 50px;
 }
 
 .card-title:hover {
@@ -198,10 +214,10 @@ a {
 }
 
 .project p {
-    padding: 0 50px 50px 50px;
+    padding: 20px 50px 50px 50px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    color: rgb(131, 130, 130);
+    font-size: 16px;
+    color: rgb(247, 244, 244);
 }
 
 .modal {
