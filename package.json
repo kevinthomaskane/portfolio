@@ -19,12 +19,15 @@
   "homepage": "https://github.com/kevinthomaskane/portfolio#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "dns": "^0.2.2",
     "dotenv": "^5.0.1",
     "express": "^4.16.3",
     "mysql": "^2.15.0",
     "mysql2": "^1.5.3",
+    "nodemailer": "^4.6.4",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "os": "^0.1.1",
     "path": "^0.12.7",
     "sequelize": "^4.37.4"
   }
-  
 }
