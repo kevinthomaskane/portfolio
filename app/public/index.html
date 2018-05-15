@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Kevin Kane</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100" rel="stylesheet">
@@ -31,7 +31,7 @@
 
 <body>
 
-    <a class="waves-effect waves-light btn modal-trigger" id="messageBtn" href="#modal1">send a message!</a>
+    <a class="waves-effect waves-light btn modal-trigger messageBtn" id="messageBtn" href="#modal1">send a message!</a>
 
     <div id="modal1" class="modal">
         <div class="modal-content">
@@ -127,7 +127,7 @@
                         <li>Heroku</li>
                     </ul>
                 </div>
-                <div class="col m6 s12">
+                <div class="col m6 s12 secondList">
                     <ul>
                         <h5 style="font-size: 20px">Back-end and Database</h5>
                         <li>NodeJS</li>
@@ -165,12 +165,12 @@
     <div id="projectArea" class="row">
         <div class="col m6 s12">
             <div class="project">
-                <a href="https://squad-up123.herokuapp.com/" target="_blank" class="full-anchor">
+                <a href="https://squadupv2.herokuapp.com/" target="_blank" class="full-anchor">
                     <div>
                         <img class="image-card itunes" src="squad.gif">
                     </div>
                     <div class="card-text">
-                        <a class="card-title" href="https://squad-up123.herokuapp.com/" target="_blank">
+                        <a class="card-title" href="https://squadupv2.herokuapp.com/" target="_blank">
                             Squad-Up
                         </a>
                         <p>Full-Stack project that incorporated ReactJS, ExpressJS, NodeJS, MySQL, Sequelize, localStorage,
@@ -303,6 +303,11 @@
             $(".project").on("mouseleave", function () {
                 $(this).children($(".card-text")).removeClass("card-text-hover")
             })
+
+            console.log($(window).width())
+            if ($(window).width() <= 640){
+                $("#messageBtn").addClass("messageBtn-small").html(`<i class="far fa-envelope"></i>`)
+            }
         })
 
         console.log($(".project").children(".card-text"))
