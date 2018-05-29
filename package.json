@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/kevinthomaskane/portfolio#readme",
   "dependencies": {
+    "aos": "^2.3.0",
     "body-parser": "^1.18.2",
     "dns": "^0.2.2",
     "dotenv": "^5.0.1",

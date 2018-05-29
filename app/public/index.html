@@ -14,6 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Kevin Kane</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
@@ -26,6 +27,7 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <!-- stats.js lib -->
     <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
 </head>
 
@@ -87,10 +89,10 @@
     <div id="topSection"></div>
     <div class="row" style="background-color: white; color: black; padding: 15px 0 10px 0; border-top: solid 1px white; border-bottom: solid 1px white;">
         <div class="col m2 s12"></div>
-        <div class="col m5 s12">
+        <div class="col m5 s12" data-aos="fade-right" data-aos-delay="100">
             <img id="about-pic" src="kevinprofilepic.jpg">
         </div>
-        <div id="aboutHeader" class="col m5 s12">
+        <div id="aboutHeader" data-aos="fade-left" data-aos-delay="100" class="col m5 s12">
             <span id="aboutText">About me.</span>
             <p id="my-bio"> My name is Kevin Kane and I am a full-stack developer living in West LA. I am easy-going, a team player, and
                 incredibly focused on the task I am presented with. I have a true passion for JavaScript and love building
@@ -108,7 +110,7 @@
                 </video>
             </div>
         </div>
-        <div class="col m6 s12">
+        <div class="col m6 s12" data-aos="zoom-in" data-aos-delay="150">
             <div class="row">
                 <div class="col m12 s12" id="skillsHeader">
                     My Skills
@@ -164,7 +166,7 @@
     </div>
     <div id="projectArea" class="row">
         <div class="col m6 s12">
-            <div class="project">
+            <div class="project" data-aos="flip-up" data-aos-delay="100">
                 <a href="https://squadupv2.herokuapp.com/" target="_blank" class="full-anchor">
                     <div>
                         <img class="image-card itunes" src="squad.gif">
@@ -181,7 +183,7 @@
         </div>
 
         <div class="col m6 s12">
-            <div class="project">
+            <div class="project" data-aos="flip-up" data-aos-delay="100">
                 <a href="https://collab-proj.herokuapp.com/" target="_blank" class="full-anchor">
                     <div>
                         <img class="image-card" src="todos.gif">
@@ -199,7 +201,7 @@
         </div>
         <div class="row">
             <div class="col m6 s12">
-                <div class="project">
+                <div class="project" data-aos="flip-up" data-aos-delay="100">
                     <a href="https://kevinthomaskane.github.io/CHARToppers/" target="_blank" class="full-anchor">
                         <div>
                             <img class="image-card" src="toppers.gif">
@@ -216,7 +218,7 @@
             </div>
 
             <div class="col m6 s12">
-                <div class="project">
+                <div class="project" data-aos="flip-up" data-aos-delay="100">
                     <a href="https://nytreactv1.herokuapp.com/" target="_blank" class="full-anchor">
                         <div>
                             <img class="image-card" src="times.gif">
@@ -234,7 +236,7 @@
         </div>
         <div class="row">
             <div class="col m6 s12">
-                <div class="project">
+                <div class="project" data-aos="flip-up" data-aos-delay="100">
                     <a href="https://kevinthomaskane.github.io/giphy/" target="_blank" class="full-anchor">
                         <div>
                             <img class="image-card" src="giphygif.gif">
@@ -251,7 +253,7 @@
             </div>
 
             <div class="col m6 s12">
-                <div class="project">
+                <div class="project" data-aos="flip-up" data-aos-delay="100">
                     <a href="https://protected-beach-89173.herokuapp.com/" target="_blank" class="full-anchor">
                         <div>
                             <img class="image-card" src="mongo.gif">
@@ -296,6 +298,7 @@
     </script>
     <script>
         $(document).ready(function () {
+            AOS.init();
             $('.modal').modal();
             $(".project").on("mouseover", function () {
                 $(this).children($(".card-text")).addClass("card-text-hover")
@@ -303,14 +306,10 @@
             $(".project").on("mouseleave", function () {
                 $(this).children($(".card-text")).removeClass("card-text-hover")
             })
-
-            console.log($(window).width())
             if ($(window).width() <= 640){
                 $("#messageBtn").addClass("messageBtn-small").html(`<i class="far fa-envelope"></i>`)
             }
         })
-
-        console.log($(".project").children(".card-text"))
 
         particlesJS("particles-js", {
             "particles": {
