@@ -26,7 +26,7 @@ function htmlRoutes(app, path, express, nodemailer, smtpTransport){
     app.post("/new", (req, res) => {
         console.log(req)
         var message = {
-              from: 'kevinthomaskane@gmail.com',
+              from: 'infoktkportfolio@gmail.com',
               to: 'kevinthomaskane@gmail.com',
               subject: req.body.name,
               text: req.body.message,
@@ -36,8 +36,8 @@ function htmlRoutes(app, path, express, nodemailer, smtpTransport){
               service: 'gmail',
               host: 'smtp.gmail.com',
               auth: {
-                user: 'kevinthomaskane@gmail.com',
-                pass: 'pippen1993'
+                user: 'infoktkportfolio@gmail.com',
+                pass: 'Pippen1993?'
             }
         }));
         transporter.sendMail(message, (err, info) => {
