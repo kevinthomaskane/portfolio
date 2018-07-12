@@ -6,3 +6,4 @@ server.csr
 server.key
 server.pass.key
 node_modules
+.vscode
