@@ -5,6 +5,7 @@ export const PERSONAL = {
   phone: '703.389.3972',
   email: 'kevinthomaskane@gmail.com',
   website: 'https://www.10xdev.io',
+  github: 'https://github.com/kevinthomaskane',
   summary:
     'Engineer with 8 years of industry experience and a track record of shipping production-grade full-stack products. As Founder of 10xDev.io, I design, build, and launch complete SaaS applications and client platforms — from database architecture to deployment — integrating AI tooling throughout the process to maximize delivery speed and quality.',
 };
@@ -211,5 +212,19 @@ export const EDUCATION = [
     degree: 'B.S. Marketing Management',
     school: 'Virginia Tech',
     date: '2015',
+  },
+];
+
+export const REFERRALS = [
+  {
+    name: 'Greg Wilken',
+    email: 'greg@gwilken.com',
+    phone: '(310) 963-9102',
+    text: 'I strongly and enthusiastically can recommend Kevin for the position of Senior Software Engineer. I hired Kevin for the position of Software Engineer and was his direct supervisor for over 5 years. He is an exceptional developer: an excellent team player, hungry to improve his skills, and can appreciate how a larger strategic vision fits into the work of day-to-day development. During his tenure with Leaf Group and World of Good Brands, he was instrumental in developing an entirely new platform that powered the most critical assets of the company. Prior to that project, he excelled working on a legacy code base, where he was able to innovate within significant constraints. He was responsible for launching multiple new products and developing full stack applications. He was promoted and received multiple bonuses for performance. He is affable, easy to work with, takes constructive criticism to heart, and always is looking to better his knowledge. Hire him. Please reach out to me if you have any questions.',
+  },
+  {
+    name: 'Andrew Alburn',
+    title: 'Principal Product Manager @ World of Good Brands',
+    text: "I'm happy to write this letter of recommendation for Kevin Kane. I had the pleasure of working with Kevin and can say without hesitation that he's one of the most capable and reliable web developers I've worked with. Kevin regularly took on some of the toughest challenges on our team—often the ones others weren't quite sure how to approach. I gave him those projects because I knew he could handle them, and he always delivered. He's a strong problem-solver who's not afraid to dig in, even when the path forward isn't immediately clear. Something else that really stands out about Kevin is how well he works with others. He's a great collaborator and often brought his leadership to the team. He has a knack for communicating technical concepts in a way that makes sense to non-technical folks, which makes him incredibly valuable in cross-functional settings. His work is consistently high-quality, and he's someone who helps move projects forward—offering clarity when things get murky and stepping up wherever he's needed. On top of all that, he's just a genuinely nice guy and a pleasure to have on the team. Any team would be lucky to have Kevin. I'd jump at the chance to work with him again.",
   },
 ];

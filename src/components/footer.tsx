@@ -16,6 +16,9 @@ export function Footer() {
             <a href={PERSONAL.website} target="_blank" rel="noreferrer" className="transition-colors hover:text-foreground">
               10xDev.io
             </a>
+            <a href={PERSONAL.github} target="_blank" rel="noreferrer" className="transition-colors hover:text-foreground">
+              GitHub
+            </a>
             <a href={`tel:${PERSONAL.phone.replace(/\./g, "")}`} className="transition-colors hover:text-foreground">
               {PERSONAL.phone}
             </a>
