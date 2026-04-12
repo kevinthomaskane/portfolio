@@ -7,7 +7,7 @@ export const PERSONAL = {
   website: 'https://www.10xdev.io',
   github: 'https://github.com/kevinthomaskane',
   summary:
-    'Engineer with 8 years of industry experience and a track record of shipping production-grade full-stack products. As Founder of 10xDev.io, I design, build, and launch complete SaaS applications and client platforms — from database architecture to deployment — integrating AI tooling throughout the process to maximize delivery speed and quality.',
+    'Engineer with 8 years of industry experience and a track record of shipping production-grade full-stack products. As Founder of 10xDev.io, I design, build, and launch complete SaaS platforms, multi-tenant directory products, and autonomous agentic systems — from database architecture to deployment — integrating Claude and OpenAI throughout to maximize delivery speed and quality.',
 };
 
 export const SKILLS: Record<string, string[]> = {
@@ -32,7 +32,7 @@ export const SKILLS: Record<string, string[]> = {
     'MongoDB',
     'Typesense',
   ],
-  'APIs & Integrations': ['Stripe', 'OpenAI API', 'Mapbox', 'Resend'],
+  'APIs & Integrations': ['Stripe', 'Claude', 'OpenAI API', 'Mapbox', 'Resend'],
   'DevOps & Tooling': [
     'Git',
     'Docker',
@@ -42,7 +42,6 @@ export const SKILLS: Record<string, string[]> = {
     'pnpm workspaces',
     'Zod',
     'Playwright',
-    'Cucumber',
   ],
 };
 
@@ -58,27 +57,81 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
-    name: 'White Crow Directory Platform',
+    name: 'White Crow Directories',
     slug: 'white-crow',
-    url: null,
-    tagline: 'Multi-tenant business directory SaaS',
+    url: 'https://goodfloridalawyers.com',
+    tagline: 'One-click agentic directory site platform',
     description:
-      'A platform that aggregates business data from Google Places API and powers multiple niche directory websites from a single codebase. Built as a pnpm monorepo with two independently deployable services and a shared package.',
+      'A multi-tenant SaaS platform built for an SEO agency that provisions a fully configured, live business directory website — complete with real business data, search, maps, billing, and an ongoing agentic content engine — from a single button press. Turns a multi-week manual build into a one-click operation and keeps sites ranking autonomously.',
     tech: [
       'Next.js 16',
+      'OpenAI API',
       'TypeScript',
       'Supabase',
       'Typesense',
       'Mapbox',
       'Stripe',
       'Cloudflare',
+      'Google Places API',
       'pnpm monorepo',
     ],
     highlights: [
-      'Monorepo architecture with Next.js frontend + TypeScript background worker + shared package',
-      'Distributed job queue for Google Places API ingestion via custom Supabase RPC',
-      'Typesense full-text search, Mapbox interactive maps, Stripe subscriptions',
-      'Multi-tenant: single codebase serves multiple directory verticals',
+      'One-click site provisioning pipeline: Supabase site record, AI-generated categories, Google Places ingestion jobs, auto-generated branding, Supabase Management API auth config, and Cloudflare subdomain — all from a single server action',
+      'Multi-tenant architecture on a single Next.js deployment: proxy middleware resolves hostname → SiteConfig, with per-tenant filtering via site_businesses / site_categories / site_cities join tables',
+      'Agentic content engine: background worker polls a Postgres-backed job queue via a claim_next_job RPC with distributed locking and 5-minute stale recovery, powering six processors including a generate-articles SEO agent',
+      'Admin dashboard with live job tracker, Typesense sync panel, on-demand biweekly business refresh, and Cloudflare CDN cache purges wired into every content mutation',
+      'Stripe Checkout + customer portal for business claim/upgrade flows, with webhooks keeping Supabase state in lockstep',
+      'Shared Zod schemas across web app and worker so job payloads never drift out of sync',
+    ],
+  },
+  {
+    name: 'BetBot',
+    slug: 'betbot',
+    url: 'https://betbot.10xdev.io',
+    tagline: 'Autonomous NBA research & pick generation platform',
+    description:
+      'An autonomous NBA research and pick generation platform powered by three Claude AI agents that wake up on a schedule, browse the web for real-time information, reason over what they find, and generate structured betting recommendations — running 24/7 in the cloud with zero human involvement after setup.',
+    tech: [
+      'Claude AI',
+      'TypeScript',
+      'PostgreSQL',
+      'Playwright',
+      'Brave Search API',
+    ],
+    highlights: [
+      'Three-agent system: Research Agent (24h + 3h pre-game runs), Pick Agent (structured JSON picks with reasoning + downstream SMS/X posts), and Baseline Agent (seasonal team profiles)',
+      'Agentic tool-use loop giving Claude web search, a Playwright-backed page fetcher for JS-rendered sites, and a database writer — the agent decides what to search, what to persist, and when to stop',
+      'Two-layer persistent memory: season baselines + game-specific research, fed to the Pick Agent together to mirror how sharp bettors assemble analysis',
+      'Autonomous scheduler running four crons: odds sync, research dispatch, pick generation, and post-game grading — with duplicate-run prevention via the agent_runs table',
+      'Prompt injection defense: delimiter-tagged web content, regex sanitization, and system-prompt privilege separation',
+      'Every pick stored with agent version, token usage, and cost for full transparency and quality tracking across prompt/model changes',
+    ],
+  },
+  {
+    name: 'Agentic Outreach System',
+    slug: 'agentic-outreach-system',
+    url: 'https://dashboard.10xdev.io',
+    tagline: 'Autonomous AI sales pipeline',
+    description:
+      'A fully autonomous outreach system powered by five AI agents that find prospects, research businesses, generate custom landing pages, and send personalized emails — running 24/7 on a single VPS with zero human involvement after setup.',
+    tech: [
+      'Claude AI',
+      'Node.js',
+      'SQLite',
+      'Google Places API',
+      'Hunter.io',
+      'nginx',
+      'Ansible',
+      'PM2',
+      'Resend',
+    ],
+    highlights: [
+      'Five-stage pipeline (prospect → research → build → outreach → monitor) coordinated by a thin orchestrator that self-heals on failure and self-seeds when the queue runs dry',
+      'Autonomous prospector uses Claude to pick categories/cities, queries Google Places, and scores each business for web presence quality',
+      'Agentic research loop via Claude tool use: search + scrape tools autonomously build structured profiles, with Hunter.io cross-checks for email deliverability',
+      'AI-generated HTML landing pages served instantly on per-business HTTPS subdomains via wildcard nginx + DNS + Certbot',
+      'Entire stack codified in an Ansible playbook (Node, PM2, nginx, Certbot, app) with ansible-vault secrets and daily SQLite backups',
+      'Guardrails: daily pipeline caps, complaint-rate circuit breaker, exponential backoff, and an inbox-monitor agent that matches replies via stored Message-IDs',
     ],
   },
   {
@@ -152,6 +205,10 @@ export const EXPERIENCE: Job[] = [
         dates: 'July 2025 – Present',
         bullets: [
           'Designed, architected, and shipped multiple production full-stack applications end-to-end, owning the full lifecycle from database schema design through CI/CD and deployment on Vercel and Render',
+          'Architected multi-tenant SaaS platforms serving unlimited sites from a single Next.js deployment, with hostname-based proxy middleware, per-tenant data isolation, and one-click site provisioning pipelines',
+          'Built autonomous agentic systems using Claude and OpenAI — agentic tool-use loops over web search and Playwright-backed scraping, persistent memory layers in Postgres, and background workers polling database-backed job queues with distributed locking',
+          'Delivered full-stack client platforms with Stripe billing and webhook lifecycles, Mapbox-powered locators, Resend transactional email, and scheduled cron automations for recurring business workflows',
+          'Shipped production infrastructure codified as Ansible playbooks and render.yaml — wildcard DNS + nginx + Certbot for per-tenant HTTPS subdomains, Cloudflare CDN with programmatic cache purging, and self-hosted Typesense search',
         ],
       },
     ],
