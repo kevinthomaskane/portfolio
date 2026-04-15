@@ -110,7 +110,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'Agentic Outreach System',
     slug: 'agentic-outreach-system',
-    url: 'https://dashboard.10xdev.io',
+    url: null,
     tagline: 'Autonomous AI sales pipeline',
     description:
       'A fully autonomous outreach system powered by five AI agents that find prospects, research businesses, generate custom landing pages, and send personalized emails — running 24/7 on a single VPS with zero human involvement after setup.',
