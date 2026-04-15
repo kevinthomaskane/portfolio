@@ -25,7 +25,13 @@ export function Projects() {
                     {project.tagline}
                   </p>
                 </div>
-                {project.url && (
+                <div className="flex shrink-0 flex-col gap-1 sm:items-end">
+                  {project.date && (
+                    <span className="font-mono text-xs text-muted">
+                      {project.date}
+                    </span>
+                  )}
+                  {project.url && (
                   <a
                     href={project.url}
                     target="_blank"
@@ -46,7 +52,8 @@ export function Projects() {
                       <line x1="10" y1="14" x2="21" y2="3" />
                     </svg>
                   </a>
-                )}
+                  )}
+                </div>
               </div>
 
               {/* description */}

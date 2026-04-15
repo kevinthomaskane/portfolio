@@ -49,6 +49,7 @@ export interface Project {
   name: string;
   slug: string;
   url: string | null;
+  date: string;
   tagline: string;
   description: string;
   tech: string[];
@@ -61,6 +62,7 @@ export const PROJECTS: Project[] = [
     slug: 'white-crow',
     url: 'https://goodfloridalawyers.com',
     tagline: 'One-click agentic directory site platform',
+    date: 'April 2026',
     description:
       'A multi-tenant SaaS platform built for an SEO agency that provisions a fully configured, live business directory website — complete with real business data, search, maps, billing, and an ongoing agentic content engine — from a single button press. Turns a multi-week manual build into a one-click operation and keeps sites ranking autonomously.',
     tech: [
@@ -87,6 +89,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'BetBot',
     slug: 'betbot',
+    date: 'March 2026',
     url: 'https://betbot.10xdev.io',
     tagline: 'Autonomous NBA research & pick generation platform',
     description:
@@ -110,6 +113,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'Agentic Outreach System',
     slug: 'agentic-outreach-system',
+    date: 'March 2026',
     url: null,
     tagline: 'Autonomous AI sales pipeline',
     description:
@@ -136,6 +140,7 @@ export const PROJECTS: Project[] = [
   },
   {
     name: 'Retailers of Art Glass & Supplies',
+    date: 'February 2026',
     slug: 'rags',
     url: 'https://stainedglassretailers.com',
     tagline: 'Membership platform for a national non-profit',
@@ -161,6 +166,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'StackTracer.io',
     slug: 'stacktracer',
+    date: 'July 2025',
     url: 'https://stacktracer.io',
     tagline: 'SaaS tool for managing & visualizing tech stacks',
     description:
