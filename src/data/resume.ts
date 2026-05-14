@@ -229,6 +229,8 @@ export const EXPERIENCE: Job[] = [
         bullets: [
           'Designed and developed a multi-site platform using Next.js and a headless WordPress CMS.',
           'Built robust, reusable frontend components with Next.js, TypeScript, and Tailwind CSS.',
+          'Led homepage development for Only In Your State, the 2025 winner of a Gold Hermes Creative Award for best website redesigns.',
+          'Led development of an AI powered travel itinerary planner, the winner of a 2025 Webby Award for AI innovation in the tourism field.',
           'Wrote GraphQL queries to retrieve dynamic content across multiple branded properties.',
           'Contributed to the successful launch of high-traffic sites including onlyinyourstate.com and wellandgood.com.',
         ],
